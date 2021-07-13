@@ -1,20 +1,21 @@
 <template>
   <div>
-    <button v-custom-directive @click="load">Lazy Load</button>
+    <button @click="load">Lazy Load</button>
     <LazyLoad v-if="show" />
   </div>
 </template>
 
 <script>
+const LazyLoad = async () => import('@/LazyLoad.vue');
+
 export default {
   data() {
     return {
       show: false,
-      lazyLoad: null,
     };
   },
   components: {
-    LazyLoad: async () => import('@/LazyLoad.vue'),
+    LazyLoad,
   },
   methods: {
     load() {
