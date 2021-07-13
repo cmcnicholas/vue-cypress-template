@@ -76,17 +76,20 @@
       </li>
     </ul>
     <ClickToLazyLoad />
+    <ClickToLazyLoadAsync />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import ClickToLazyLoad from './ClickToLazyLoad.vue';
+import ClickToLazyLoadAsync from './ClickToLazyLoadAsync.vue';
 
 export default Vue.extend({
   name: 'HelloWorld',
   components: {
     ClickToLazyLoad,
+    ClickToLazyLoadAsync,
   },
   props: {
     msg: String,
