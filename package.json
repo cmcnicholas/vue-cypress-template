@@ -7,7 +7,9 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
     "@cypress/vue": "^2.2.0",
